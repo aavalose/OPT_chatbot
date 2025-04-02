@@ -3,7 +3,8 @@ from dotenv import load_dotenv
 import os
 import json
 from pathlib import Path
-from typing import List, Tuple
+from typing import List, Tuple, Dict
+from .embeddings_manager import *
 
 # Load environment variables first
 load_dotenv()
@@ -12,18 +13,31 @@ print(f"API Key loaded: {os.getenv('GEMINI_API_KEY') is not None}")  # Debug lin
 # Configure the Gemini API with your key
 genai.configure(api_key=os.getenv('GEMINI_API_KEY'))
 
-def preprocess_query(query: str) -> List[str]:
+def preprocess_query(query: str) -> Tuple[List[str], List[Dict]]:
     """
-    Analyze the query and return relevant categories.
+    Enhanced preprocessing that includes semantic search
     
     Args:
-        query (str): The user's question about OPT
+        query (str): User's question
         
     Returns:
-        List[str]: List of relevant categories
+        Tuple[List[str], List[Dict]]: Categories and similar questions
     """
+    model = None
+    response = None
     try:
-        model = genai.GenerativeModel('gemini-2.0-flash')
+        generation_config = {
+            'temperature': 0.3,
+            'top_p': 0.9,
+            'top_k': 50,
+            'max_output_tokens': 2048,
+        }
+        
+        model = genai.GenerativeModel(
+            model_name='gemini-2.0-flash',
+            generation_config=generation_config
+        )
+        
         prompt = f"""Analyze this question and return up to THREE most relevant categories from the following list, ordered by relevance:
          - General Information and Eligibility: Questions about what OPT is, who qualifies, F-1 status requirements, program of study requirements, etc.
         - Application Process: Questions about how to apply for OPT, required documents, USCIS forms, application fees, etc.
@@ -68,11 +82,17 @@ def preprocess_query(query: str) -> List[str]:
         }
         
         validated_categories = [cat for cat in categories if cat in valid_categories]
-        return validated_categories if validated_categories else ['Other']
+        return (validated_categories if validated_categories else ['Other'])
         
     except Exception as e:
         print(f"Error in preprocessing query: {str(e)}")
         return ['Other']
+    finally:
+        # Explicit cleanup
+        if response:
+            del response
+        if model:
+            del model
 
 def match_files(categories: List[str]) -> Tuple[str, List[str]]:
     """
@@ -83,7 +103,10 @@ def match_files(categories: List[str]) -> Tuple[str, List[str]]:
         
     Returns:
         Tuple[str, List[str]]: Primary document and list of secondary documents
-    """
+    """    
+    # Ensure categories are strings
+    categories = [str(cat) if isinstance(cat, list) else cat for cat in categories]
+    
     category_to_file = {
         'General Information and Eligibility': 'general_info.json',
         'Application Process': 'application_process.json',
@@ -128,34 +151,55 @@ def load_json_content(filename: str) -> dict:
         print(f"Error loading {filename}: {str(e)}")
         return {}
 
-def generate_response(query: str, primary_document: str, secondary_documents: List[str]) -> str:
+def generate_response(query: str, primary_document: str, secondary_documents: List[str], number_of_similar_questions: int = 1) -> str:
     """
-    Generate a response using the query and relevant documents.
-    
-    Args:
-        query (str): The user's question
-        primary_document (str): Primary JSON file to use
-        secondary_documents (List[str]): Additional JSON files to reference
-        
-    Returns:
-        str: Generated response
+    Enhanced response generation using similar questions
     """
+    manager = EmbeddingsManager()
+    model = None
+    response = None
     try:
         # Load document contents
         primary_content = load_json_content(primary_document) if primary_document else {}
         secondary_contents = [load_json_content(doc) for doc in secondary_documents]
+        similar_questions = manager.search_similar_questions(query, k=number_of_similar_questions)
         
-        model = genai.GenerativeModel('gemini-2.0-flash')
-        prompt = f"""You are an expert advisor on Optional Practical Training (OPT) for international students.
-        Use the following information to provide a comprehensive and accurate answer.
+        similar_contexts = "\n".join([
+            f"Similar Question: {q['question']}\nAnswer: {q['answer']}\nMetadata: {q['metadata']}"
+            for q in similar_questions
+        ])
+        
+        generation_config = {
+            'temperature': 0.3,
+            'top_p': 0.9,
+            'top_k': 50,
+            'max_output_tokens': 2048,
+        }
+        
+        model = genai.GenerativeModel(
+            model_name='gemini-2.0-flash',
+            generation_config=generation_config
+        )
+        
+        prompt = f"""You are a helpful and knowledgeable advisor on Optional Practical Training (OPT) for international students at the University of San Francisco.
+        
+        Similar questions, their answers, and metadata:
+        {similar_contexts}
         
         Primary Information:
-        {primary_content}
+        {json.dumps(primary_content, indent=2)}
         
         Additional Context:
-        {secondary_contents}
+        {json.dumps(secondary_contents, indent=2)}
         
-        Question: {query}
+        Current Question: "{query}"
+        
+        Instructions:
+        1. Use ALL the provided information to formulate a comprehensive response
+        2. If the information contains specific facts, numbers, requirements, or deadlines, preserve them exactly
+        3. Focus on answering the user's specific question
+        4. Use a conversational but professional tone while maintaining accuracy
+        5. If any information is missing or unclear, acknowledge it
         
         Please provide:
         1. A clear, direct answer to the question
@@ -167,9 +211,16 @@ def generate_response(query: str, primary_document: str, secondary_documents: Li
         """
         
         response = model.generate_content(prompt)
-        return response.text
-        
+        result = response.text
+        return result
+    
     except Exception as e:
         error_msg = f"I apologize, but I encountered an error while processing your question: {str(e)}"
-        print(error_msg)  # For debugging
+        print(error_msg)
         return error_msg
+    finally:
+        # Explicit cleanup
+        if response:
+            del response
+        if model:
+            del model

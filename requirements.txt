@@ -1,3 +1,5 @@
 google-generativeai>=0.3.0
 pathlib>=1.0.1
 python-dotenv>=1.0.0 
+transformers>=4.39.2
+flash_attn>=2.5.6
