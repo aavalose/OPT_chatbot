@@ -1,6 +1,16 @@
 # OPT Chatbot
 
-A chatbot for answering questions about Optional Practical Training (OPT).
+A Streamlit-based chatbot powered by Google's Gemini AI for answering questions about Optional Practical Training (OPT) at the University of San Francisco.
+
+## Features
+
+- Interactive chat interface using Streamlit
+- AI-powered responses using Google's Gemini model
+- Category-based question routing
+- Semantic search for similar questions
+- Comprehensive OPT information database
+
+## Project Structure
 
 ## Setup
 
@@ -20,14 +30,22 @@ pip install -r requirements.txt
 # Copy the template file
 cp .env.template .env
 
-# Edit .env file with your actual API keys
+# Edit .env file with your API keys
 nano .env  # or use any text editor
 ```
 
 4. Add your API keys to the .env file:
 ```
-GEMINI_API_KEY=your_actual_api_key_here
 ```
+
+## Running the Application
+
+From the project root directory, run:
+```bash
+streamlit run frontend/app.py
+```
+
+The application will be available at `http://localhost:8501` by default.
 
 ## Security Notes
 
@@ -36,30 +54,33 @@ GEMINI_API_KEY=your_actual_api_key_here
 - Always use environment variables for API keys and sensitive data
 - Keep your API keys secure and never share them
 
-## Usage
+## Features
 
-```python
-from query_matcher import query_opt_knowledge_base
+The chatbot:
+- Categorizes questions into relevant topics
+- Searches for similar previous questions
+- Provides comprehensive answers using multiple knowledge sources
+- Maintains chat history during the session
+- Allows clearing chat history
 
-# The API key will be automatically loaded from .env
-query = "What are the requirements for STEM OPT Extension?"
-matches = query_opt_knowledge_base(query)
+## Dependencies
 
-for match in matches:
-    print(f"Source: {match['file']}")
-    print(f"Question: {match['question']}")
-    print(f"Relevance: {match['relevance_score']}")
-    print(f"Answer: {match['answer']}")
-```
+- streamlit
+- google-generativeai
+- python-dotenv
+- Additional dependencies listed in requirements.txt
 
-## Directory Structure
+## Development
 
-```
-OPT_chatbot/
-├── data/                 # JSON knowledge base files
-├── query_matcher.py      # Main query matching logic
-├── requirements.txt      # Python dependencies
-├── .env                 # Your API keys (not in version control)
-├── .env.template        # Template for .env file
-└── .gitignore          # Git ignore rules
-``` 
+To contribute to this project:
+1. Create a new branch for your feature
+2. Make your changes
+3. Ensure all imports and paths are correctly configured
+4. Test the application thoroughly
+5. Submit a pull request
+
+## License
+
+This project is currently pending license selection. License details will be added soon.
+
+In the meanwhile, please acknowledge [@aavalose](https://github.com/aavalose) when using or referencing this project.
