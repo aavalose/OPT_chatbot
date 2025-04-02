@@ -1,0 +1,143 @@
+{
+  "categories": {
+    "sevp_portal": {
+      "title": "SEVP Portal Overview and Set Up",
+      "questions": [
+        {
+          "question": "What should I know about the SEVP portal?",
+          "answer": "All students on Post-Completion OPT are required to report their personal information and employment information on the SEVP Portal within 10 days of the change.",
+          "additional_info": {
+            "portal_link": "https://sevp.ice.gov/opt",
+            "system_integration": "The SEVP portal is connected to SEVIS (Student and Exchange Visitor Information System) and data is shared between the two systems"
+          }
+        },
+        {
+          "question": "How will I get access to the SEVP portal?",
+          "answer": "Students approved for OPT will be contacted on their OPT start date to create their SEVP portal account.",
+          "access_details": {
+            "sender": "do-not-reply.sevp@ice.dhs.gov",
+            "email_info": {
+              "count": "Two emails will be sent",
+              "destination": "USF email address"
+            },
+            "troubleshooting": {
+              "if_not_received": "Check spam or junk mail folder",
+              "prevention": "Add do-not-reply.sevp@ice.dhs.gov to email contacts"
+            }
+          }
+        },
+        {
+          "question": "How can I set up my SEVP portal account?",
+          "answer": "Create your account using the temporary password and unique registration link and begin reporting your information.",
+          "setup_restrictions": {
+            "link_usage": "Can only use the link once",
+            "validity": "Link valid for 14 days from sending",
+            "if_expired": "Contact isss@usfca.edu to have the notice sent again"
+          },
+          "resources": {
+            "user_guide": "https://studyinthestates.dhs.gov/assets/SEVP%20Portal%20Student%20User%20Guide.pdf",
+            "videos": "https://studyinthestates.dhs.gov/sevp-portal-help/additional-resources/sevp-portal-videos"
+          },
+          "pre_completion_note": {
+            "access": "Students approved for Pre-Completion OPT do not get access to the SEVP portal",
+            "reporting": "Not required to report employment",
+            "address_changes": "Should report changes to their address on MyISSS"
+          }
+        }
+      ]
+    },
+    "reporting_requirements": {
+      "title": "Reporting Requirements on OPT",
+      "questions": [
+        {
+          "question": "What are the reporting requirements on OPT?",
+          "answer": "Students are required to report changes to your address and employment information to the SEVP portal within 10 days of the change while on Post-Completion OPT.",
+          "address_update": {
+            "usf_process": "Update address via MyUSF (Banner Self-Service)",
+            "instructions_link": "https://myusf.usfca.edu/dean-of-students/address-faq"
+          }
+        },
+        {
+          "question": "Why is it important to report employment on OPT?",
+          "answer": "You need to self-report your employment on the SEVP portal or you will be considered unemployed on OPT.",
+          "unemployment_impact": "Every day that a student has reported qualifying employment on the SEVP portal will not count towards the 90-day unemployment limit"
+        },
+        {
+          "question": "What information is needed to report?",
+          "answer": "When reporting your employment on the SEVP portal, you will need to list your work address and document how your employment is related to your major field of study.",
+          "required_information": {
+            "work_location": {
+              "standard": "Work address",
+              "remote": "Remote address as work location if working remotely"
+            },
+            "employment_details": [
+              "Number of hours you are working per week",
+              "Your job title",
+              "Your job description and duties",
+              "How your job duties relate to your major field of study"
+            ],
+            "examples": {
+              "bachelors_business": {
+                "degree": "Bachelor's degree in Business",
+                "example": "I work full time as a Loan Officer at a mortgage company, Happy Homes, where I meet with clients and evaluate, authorize and recommend approval of loan applications. On a daily basis, I use the knowledge I gained in my credit analysis, sales and marketing classes that I took as part of my major program of study."
+              },
+              "masters_kinesiology": {
+                "degree": "Master's degree in Kinesiology",
+                "example": "I am working 25 hours a week in a health food store as a consultant for Self-Made Inc., designing and teaching exercise classes that are incorporated into a customer's overall nutrition and exercise plan. My designs and customer instruction draw upon my studies and classwork in exercise therapy and physical reconditioning."
+              }
+            },
+            "documentation": {
+              "offer_letter": "Not needed for portal reporting",
+              "record_keeping": "Keep records of all OPT employment for future evidence if needed"
+            }
+          },
+          "stem_opt_note": {
+            "difference": "OPT reporting requirements differ to STEM OPT reporting requirements",
+            "stem_reporting": "Need to report job changes to MyISSS",
+            "more_info": "https://myusf.usfca.edu/ISSS/STEMOPT"
+          }
+        },
+        {
+          "question": "How do I access and report employment on the SEVP Portal?",
+          "resources": {
+            "user_guide": "https://studyinthestates.dhs.gov/assets/SEVP%20Portal%20Student%20User%20Guide.pdf",
+            "portal_login": "https://sevp.ice.gov/opt/#/login"
+          }
+        }
+      ]
+    },
+    "status_changes": {
+      "title": "Reporting Change in Status to ISSS while on OPT",
+      "questions": [
+        {
+          "question": "If you change your visa status while on OPT, what should you do next?",
+          "answer": "If you have been approved and have changed to another immigration status during your OPT period, report this Change of Status to ISSS.",
+          "reporting_process": {
+            "method": "Submit a Visa Category Update request via MyISSS",
+            "portal": "https://myisss.usfca.edu/",
+            "purpose": "To check that your F-1 record is ended correctly"
+          },
+          "important_notes": {
+            "status_maintenance": "In most cases, you won't be able to maintain your OPT and F-1 status when you are in another status in the U.S.",
+            "consultation": "Speak with your immigration attorney and ISSS if changing immigration status"
+          },
+          "resources": {
+            "change_of_status_info": "https://myusf.usfca.edu/isss/students/f-1/change-status"
+          }
+        },
+        {
+          "question": "What is the Cap Gap Extension?",
+          "answer": "Students who have a pending or approved cap-subject H-1B petition and requested a Change of Status to H-1B before their F-1 status ends are eligible for a Cap Gap extension.",
+          "extension_details": {
+            "purpose": "Extend F-1 status and, in some cases, work authorization before H-1B goes into effect",
+            "request_process": "Can request a Cap Gap I-20 via MyISSS",
+            "resources": {
+              "myisss_link": "https://usfca.instructure.com/courses/1626497/pages/reporting-change-in-status-to-isss-while-on-opt",
+              "more_info": "https://myusf.usfca.edu/isss/students/f-1/employment/optinfo"
+            }
+          }
+        }
+      ]
+    }
+  }
+} 

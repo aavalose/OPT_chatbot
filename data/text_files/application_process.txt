@@ -1,0 +1,112 @@
+- What is the OPT application process?
+
+The process of applying for Optional Practical Training (OPT) employment authorization is very detailed. It is important to pay close attention to this course and follow the steps outlined accurately:
+
+1. Complete the OPT course via Canvas within 1 year of when you will apply for OPT. We recommend completing the course when you are getting ready to prepare and submit the application to USCIS so that you can remember all the important details.
+
+2. Prepare your application materials in a digital format.
+
+3. Submit the OPT I-20 request through MyISSS (https://usfca.instructure.com/courses/1626497/pages/overview?module_item_id=18493803#:~:text=MyISSS,an%20external%20site.). to be issued a new I-20 Form with an OPT recommendation.
+
+4. Retrieve your OPT I-20 Form, print, physically sign, and date it in black ink. Scan your physically signed OPT I-20 Form and add it to your digital OPT application materials.
+
+5. Create a USCIS (https://myaccount.uscis.gov/sign-in) and complete your OPT application (Form I-765) online. Reference this PDF (https://myusf.usfca.edu/sites/default/files/users/sruszkowski/OPT_OnlineFiling.pdf) for assistance completing your application online.
+
+6. Pay the filing fee and submit your application to USCIS.
+
+*These steps are outlined on our OPT (https://myusf.usfca.edu/isss/students/f-1/employment/optfaq).
+
+- Materials to Prepare
+What Application Materials do you need to apply for OPT?
+
+1. Documents required to request the OPT I-20 Form in MyISSS:
+
+Valid passport biographical page
+Most recent I-94 (https://i94.cbp.dhs.gov/search/recent-search).
+Previous Employment Authorization Document (EAD) (if applicable):
+For students who have had EAD cards in the past, prepare a digital copy (front and back) of any previously issued EAD.
+Screenshot Proof of Completion of OPT Canvas Course
+2. Other Documents to prepare to submit the I-765 OPT application to USCIS:
+
+Digital photo - specifications (https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/photos.html).
+Filing Fee - Estimated, subject to change: $470.00 USD for Online Filing, which will be submitted online at the end of the I-765 OPT application.
+For additional confirmation, please visit the USCIS Fee Schedule (https://www.uscis.gov/g-1055) and select Form I-765, Application for Employment Authorization for the latest information.
+Previous CPT and OPT I-20 Forms:
+If you have had any CPT or OPT authorizations in the past, scan copies of all pages of previously issued I-20 Forms with CPT and OPT authorization from during your studies at USF and any prior institutions.
+Missing I-20 Forms (if applicable) - If you are missing any previous I-20 Forms, use the Template Missing Previous Form I-20 letter (https://usfca.instructure.com/courses/1626497/pages/materials-to-prepare?module_item_id=18493802#:~:text=Template%20Missing%20Previous,an%20external%20site) to explain your F-1 student history.
+If you do not have any previous CPT or OPT authorizations, skip this section on the I-765 application.
+
+- Requesting the OPT I-20 via MyISSS
+
+How do you request your OPT I-20 Form via MyISSS?
+
+Please view the video as a helpful guide on how to request your OPT I-20 Form via your MyISSS (https://myisss.usfca.edu/)
+
+Helpful Video URL: https://usfca.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bb53ef0f-8695-4725-a685-b2760184f5a5&start=0.168131
+
+Additional Information to consider before requesting your OPT I-20 Form:
+
+Recommendation from Advisor: In the Approval section you will submit an electronic request to your Academic Advisor or Department Head to verify your degree program, and expected date of completion. Your Advisor will receive the request in their email and complete it electronically. After your Advisor completes the recommendation, and the rest of your application is complete, the request will automatically be submitted to ISSS for review.
+
+Note for Undergraduate School of Management students: You should list Benjamin Bottorff, Director of Academic Advising, as their advisor in the Approval section of the OPT request.
+
+Note for Graduate School of Management students: You should list Tamara Rockett, Program Assistant for Graduate Student Affairs, as their advisor in the Approval section of the OPT request.
+
+Once you retrieve your new OPT I-20 Form, print, physically sign, and date it in black ink. Scan your physically signed OPT I-20 Form and add it to your digital OPT application materials.
+
+Remember to submit your I-765 OPT application to USCIS within 30 days of the I-20 issuance date (the date next to the ISSS staff members signature on page 1). Failure to submit your I-765 OPT application to USCIS on time can result in the denial of your application.
+
+- Submitting the Form I-765 to USCIS
+
+How do you create a USCIS Online Account?
+
+Please view the video below from USCIS on how to create a USCIS Online Account (https://www.youtube.com/watch?v=gqY6NmorTtU&t=2s). Once your account is created, from your USCIS Online Account you can "File a form online", the I-765, Application for Employment Authorization.
+
+*You may use any email address to create your USCIS account, but you will want to use an email that you will have access to permanently. If you are working for USF after graduation, you may lose access to your USF student email once your employment with USF ends. Please note ISSS and SEVP/SEVIS will continue to use your USF email address to communicate with you during your OPT and STEM OPT.
+
+How do you submit your OPT application to USCIS?
+
+Please refer this PDF (https://myusf.usfca.edu/sites/default/files/users/sruszkowski/OPT_OnlineFiling.pdf) for assistance and a helpful guide on how to submit your I-765 OPT application to USCIS.
+
+Premium Processing: is a service offered by the USCIS that expedites the processing of certain applications. It guarantees adjudicative action will be taken on your case within 30 business days.
+
+To request Premium Processing for your OPT application, you will
+
+Need to file Form I-907 (https://www.uscis.gov/i-907) with USCIS
+Pay additional filing fee of $1,685.00 USD
+*Please note that filing Premium Processing does NOT guarantee your case being approved within 30 business days, and USCIS will refund the fee if they fail to make an adjudication decision within 30 business days.
+
+- Tracking your Application Case Status
+
+What is the average processing time for an OPT application?
+
+USCIS Average Processing Time: 3-4 months from submitting Form I-765.
+
+However, USCIS Average Processing Times are subject to change. To check the latest case processing times please use the link below and input the following information.
+
+Form I-765 Application for Employment Authorization > Form Category Based on a request by a qualified F-1 academic student [(c)(3)] > Field Office or Service Center Potomac Service Center > Get processing time
+
+Check Case Processing Times (https://usfca.instructure.com/courses/1626497/pages/tracking-your-application-case-status?module_item_id=18493807#:~:text=Check%20Case%20Processing,an%20external%20site)
+
+How can you track the status of your application?
+
+During these 3-4 months, you can track your case status and delivery of your EAD card by checking the case status and case history tabs in your online USCIS account. You can also view an electronic copy of your Receipt/Approval/Request for Further Evidence (RFE) notices in the Documents tab of your USCIS account.
+
+What documents can you expect after submitting your application?
+
+Review the information below for relevant documents to expect after submitting your I-765 OPT application:
+
+I-797 Receipt Notice - A notice of receipt confirming that your OPT application was received by USCIS. This notice will be issued to you electronically and can be viewed on your online USCIS account. A physical copy of this notice will be mailed to the address indicated on your Form I-765 typically 4-6 weeks from your OPT application submission date. Keep this notice and record your Receipt Number so you can track your case status using your online USCIS account.
+I-797 Approval or Denial Notice - A notice stating whether your OPT application has been approved or denied will be issued to you electronically and can be viewed on your online USCIS account. A physical copy of this notice will be mailed to the address indicated on your Form I-765 typically 4-6 weeks from your date of action.
+I-797 Request for Further Evidence - A notice requesting further evidence in order to take adjudicative action. This notice indicates that USCIS is processing your case but is seeking additional information. Processing of your OPT application will resume upon receipt of your response. Please reach out and provide a copy of your RFE notice to ISSS immediately at isss@usfca.edu. 
+
+- Receiving your EAD card
+What is an Employment Authorization Document (EAD) card?
+
+The EAD card is your proof of work authorization in the United States and is issued to you after your OPT application has been approved by USCIS. Your EAD card will be mailed to the physical address entered on your I-765 OPT application. You can find the USPS tracking number in your case status tab after your EAD card has been mailed. Use this number to track the delivery of your EAD card. EAD cards are typically delivered within a week of mailing.
+
+What does an EAD card look like? ![EAD Card Sample](images/EAD_card.png)
+
+Do you need to apply for a Social Security Number (SSN) with your application?
+
+The SSN is an unique identification number that your employer will require of you for wage and tax purposes. You will receive a SSN card from the Social Security Administration (SSA) if you had requested a SSN within your I-765 OPT application. The SSN card is sent separately from your EAD card and typically arrives 7 business days after you receive the EAD card from USCIS. If you already have a SSN, you do not need to apply for it again with your I-765 OPT application.  

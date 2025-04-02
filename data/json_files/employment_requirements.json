@@ -1,0 +1,128 @@
+{
+  "categories": {
+    "employment_requirements": {
+      "title": "Employment Requirements on OPT",
+      "resources": {
+        "video": "https://usfca.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c308f2ce-3411-4252-95d7-b2790113997b&start=0"
+      },
+      "questions": [
+        {
+          "question": "What work can students engage in during OPT?",
+          "answer": "Students can only engage in employment related to their major field of study on OPT.",
+          "employment_criteria": {
+            "hours": "Must be working full-time (over 20 hours/week)",
+            "field": "Must be in major field of study",
+            "types": [
+              "Paid work",
+              "Unpaid work",
+              "Internship",
+              "Volunteer work",
+              "Self-employment"
+            ],
+            "limitations": {
+              "hours": "No maximum number of jobs or work hours restricted",
+              "field_restriction": "Cannot be related to your minor"
+            }
+          },
+          "field_verification": {
+            "method": "Students should show direct connection of job duties to course curriculum",
+            "consultation": "If unsure, ask academic department for opinion",
+            "responsibility": "Ultimately up to the student to demonstrate this connection"
+          }
+        },
+        {
+          "question": "What are the location requirements for employment?",
+          "answer": "Students working on OPT can work in-person, in a hybrid format or remotely from within the US.",
+          "location_requirements": {
+            "employer_address": "Must be within the US",
+            "work_flexibility": {
+              "geographic": "Can work anywhere in the United States",
+              "employer_count": "Can work with multiple employers at one time",
+              "changes": "Can change employers as many times as they wish"
+            },
+            "remote_work": {
+              "restriction": "Not possible to work fully remotely from outside of the US",
+              "requirement": "Must report a US address as the site of employment",
+              "travel": "Temporary travel abroad is allowed, but a physical US address is still required"
+            }
+          }
+        }
+      ]
+    },
+    "unemployment": {
+      "title": "Unemployment Limits on OPT",
+      "resources": {
+        "video": "https://usfca.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9ad935fc-7634-4753-8b51-b279011698e2&start=0"
+      },
+      "questions": [
+        {
+          "question": "What is considered employment?",
+          "answer": "Students on OPT are expected to be employed during their approved OPT period.",
+          "requirements": {
+            "hours": "Working over 20 hours/week",
+            "field": "Position must be related to major field of study"
+          }
+        },
+        {
+          "question": "Is there a limit on the number of days I can be unemployed?",
+          "answer": "Unemployment limits vary by OPT type",
+          "limits": {
+            "pre_completion": {
+              "days": "No limit on unemployment",
+              "impact": "Won't impact F-1 status"
+            },
+            "post_completion": {
+              "days": "90 days total",
+              "consequence": "Exceeding 90 days results in F-1 status violation"
+            }
+          }
+        },
+        {
+          "question": "When do I start accruing unemployment days?",
+          "answer": "You will start accruing unemployment days on your approved OPT start date if you do not report qualifying employment on the SEVP portal.",
+          "important_notes": {
+            "start_date": "Listed on your EAD card",
+            "warning": "Students who do not receive their EAD card after their OPT start date could also accrue unemployment days",
+            "severe_consequence": "SEVP can terminate your SEVIS record if you have not reported an employer or have exceeded the maximum days of unemployment"
+          }
+        }
+      ]
+    },
+    "status_violations": {
+      "title": "Violations of OPT and F-1 Student Status",
+      "questions": [
+        {
+          "question": "What happens if you exceed the unemployment limit?",
+          "answer": "Students who exceed 90 days of unemployment will be considered in violation of their OPT and F-1 status.",
+          "student_responsibilities": [
+            "Report employment on the SEVP portal",
+            "Keep track of unemployment days",
+            "Ensure not exceeding 90 days of unemployment"
+          ]
+        },
+        {
+          "question": "What are your options before you exceed the unemployment limit and violate your visa status?",
+          "answer": "There are several actions you can take before exceeding 90 days of unemployment",
+          "options": [
+            {
+              "action": "Transfer to another school",
+              "link": "https://myusf.usfca.edu/isss/students/f-1/transfer"
+            },
+            {
+              "action": "Change to another USF program",
+              "type": "Change of Education Level I-20",
+              "link": "https://myusf.usfca.edu/isss/students/f-1/change-program"
+            },
+            {
+              "action": "Change your status",
+              "method": "Submit an application with USCIS"
+            },
+            {
+              "action": "Depart the U.S."
+            }
+          ]
+        }
+      ]
+    }
+  }
+} 

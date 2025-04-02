@@ -1,0 +1,80 @@
+{
+  "categories": {
+    "general_travel": {
+      "title": "General Travel Information",
+      "questions": [
+        {
+          "question": "Can students travel during OPT?",
+          "answer": "It is possible to travel while applying for or on OPT, but students should have all the information and documents they need before departing the U.S.",
+          "important_notes": {
+            "preparation": "It can be much harder to prepare for reentry from outside of the U.S. and while traveling",
+            "passport_requirement": "Your passport should always be valid for 6 months into the future"
+          },
+          "resources": {
+            "required_documents": "images/docs_needed_for_travel.png"
+          }
+        }
+      ]
+    },
+    "pending_application_travel": {
+      "title": "Travel During Pending Application",
+      "questions": [
+        {
+          "question": "Should students travel while their OPT application is pending?",
+          "answer": "Travel before your OPT is approved can be complicated.",
+          "scenarios": {
+            "before_graduation": "Until you complete your program of study, you will continue to travel as an enrolled student",
+            "after_graduation": "Once you have graduated, the documents that you need will vary depending on the status of your OPT application"
+          },
+          "complications": {
+            "approval_during_travel": {
+              "requirement": "If your OPT application was pending when you left the U.S. but is approved before you have returned, you will need to have your EAD card with you to reenter the U.S.",
+              "risk": "This may require international mailing adding additional risk and complications"
+            }
+          },
+          "resources": {
+            "required_documents": "images/docs_needed_for_travel.png"
+          }
+        }
+      ]
+    },
+    "post_graduation_travel": {
+      "title": "International Travel After Graduation",
+      "questions": [
+        {
+          "question": "What to consider before international travel after graduation?",
+          "answer": "After students complete their program, you have 60 days to consider your options for staying in the U.S. also known as your 60 Day Grace Period.",
+          "travel_restrictions": {
+            "domestic": "Can travel within the U.S. during the 60-day grace period",
+            "international": {
+              "without_opt": "Cannot re-enter in F-1 status if you leave the U.S. without applying for OPT",
+              "with_pending_opt": "Students can re-enter in F-1 status with a pending OPT application"
+            }
+          },
+          "recommendations": "Students applying for OPT after their Program Completion and on their 60 Day Grace Period should submit their OPT application to USCIS before departing the U.S.",
+          "resources": {
+            "more_info": "https://usfca.instructure.com/courses/1626497/pages/required-documents-for-travel?module_item_id=18493815",
+            "advising": {
+              "recommendation": "Attend an OPT Drop-In Advising Session to discuss further",
+              "calendar": "https://calendar.google.com/calendar/embed?src=c_4f2f31366a7184e3dfb919e14bfa9f08f8d1e1fe60f1a22902068364789286ea%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+            }
+          }
+        }
+      ]
+    },
+    "working_abroad": {
+      "title": "Working Abroad During OPT",
+      "questions": [
+        {
+          "question": "Can students work abroad while on OPT?",
+          "answer": "Students on OPT or STEM OPT should remain primarily in the U.S. for their employment.",
+          "time_restrictions": {
+            "status_loss": "Remaining outside of the U.S. for more than 5 months can result in the loss of your F-1 status",
+            "unemployment": "Students on OPT and STEM OPT can be seen as gaining days of unemployment if they are outside of the U.S. for extended periods of time",
+            "consultation_required": "Students on OPT and STEM OPT taking trips abroad for more than 1 month should consult their ISSS advisor"
+          }
+        }
+      ]
+    }
+  }
+} 

@@ -1,0 +1,59 @@
+- SEVP Portal Overview and Set Up
+What should I know about the SEVP portal?
+
+All students on Post-Completion OPT are required to report their personal information (address and phone number) and employment information on the SEVP Portal (https://sevp.ice.gov/opt) within 10 days of the change.
+
+The SEVP portal is connected to SEVIS (Student and Exchange Visitor Information System) and data is shared between the two systems.
+
+How will I get access to the SEVP portal? 
+
+Students approved for OPT will be contacted on their OPT start date to create their SEVP portal account. The Student and Exchange Visitor Program (SEVP) will email you instructions on creating an account from this email address: do-not-reply.sevp@ice.dhs.gov. Two emails will be sent to your USF email address. If you do not see the emails, check your spam or junk mail folder. You may add "do-not-reply.sevp@ice.dhs.gov" to your email contacts and check your junk mail to ensure you do not miss receiving the email from SEVP.
+
+How can I set up my SEVP portal account?
+
+Once you receive the emails, create your account using the temporary password and unique registration link and begin reporting your information. You can only use the link once and the link in the email valid for 14 days from the day it was sent. If the link has expired, you will need to contact isss@usfca.edu to have the notice sent again. 
+
+For screenshots and step-by-step instructions, please refer to the SEVP Portal User Guide (https://studyinthestates.dhs.gov/assets/SEVP%20Portal%20Student%20User%20Guide.pdf) and the SEVP Portal Videos (https://studyinthestates.dhs.gov/sevp-portal-help/additional-resources/sevp-portal-videos)
+
+Students approved for Pre-Completion OPT do not get access to the SEVP portal, and are not required to report their employment. Students on Pre-Completion OPT should report changes to their address on MyISSS. 
+
+- Reporting Requirements on OPT
+What are the reporting requirements on OPT?
+
+Students are required to report changes to your address and employment information to the SEVP portal within 10 days of the change while on Post-Completion OPT.  If you want to report your new address to USF while on post-completion OPT, you only need to update your address via MyUSF (Banner Self-Service). You may refer to these instructions (https://myusf.usfca.edu/dean-of-students/address-faq) to update your address with USF.
+
+Why is it important to report employment on OPT?
+
+You need to self-report your employment on the SEVP portal or you will be considered unemployed on OPT. Every day that a student has reported qualifying employment on the SEVP portal will not count towards the 90-day unemployment limit.
+
+What information is needed to report?
+
+When reporting your employment on the SEVP portal, you will need to list your work address and document how your employment is related to your major field of study. If you will be working remotely, you should enter your remote address as your work location.
+
+Use the short text field in the employer information page to document the relationship between your employment and major field of study. You will want to include:
+
+Number of hours you are working per week
+Your job title
+Your job description and duties
+How your job duties relate to your major field of study
+You may reference examples of acceptable responses provided by SEVP:
+
+Bachelor's degree in Business: I work full time as a Loan Officer at a mortgage company, Happy Homes, where I meet with clients and evaluate, authorize and recommend approval of loan applications. On a daily basis, I use the knowledge I gained in my credit analysis, sales and marketing classes that I took as part of my major program of study.
+
+Master's degree in Kinesiology: I am working 25 hours a week in a health food store as a consultant for Self-Made Inc., designing and teaching exercise classes that are incorporated into a customer's overall nutrition and exercise plan. My designs and customer instruction draw upon my studies and classwork in exercise therapy and physical reconditioning."
+
+You do not need to provide your offer letter when reporting employment information on the SEVP portal, but you should keep records of all OPT employment in case you are asked to show evidence of your OPT employment in the future.
+
+Please note: OPT reporting requirements differ to STEM OPT reporting requirements. When you are on STEM OPT, you will need to report job changes to MyISSS. More information about STEM OPT reporting requirements can be found on our STEM OPT webpage (https://myusf.usfca.edu/ISSS/STEMOPT)
+
+How do I access and report employment on the SEVP Portal?
+
+The SEVP Portal User Guide (https://studyinthestates.dhs.gov/assets/SEVP%20Portal%20Student%20User%20Guide.pdf) has detailed instructions and screenshots on accessing and reporting your information on the SEVP portal. Students who have created their SEVP Portal account can access the SEVP portal here (https://sevp.ice.gov/opt/#/login)
+
+- Reporting Change in Status to ISSS while on OPT
+If you change your visa status while on OPT, what should you do next?
+
+If you have been approved and have changed to another immigration status e.g., H-1B or permanent resident, during your OPT period, report this Change of Status (https://myusf.usfca.edu/isss/students/f-1/change-status) to ISSS so we can check that your F-1 record is ended correctly. Submit a Visa Category Update request via MyISSS (https://myisss.usfca.edu/) to report your change in status. In most cases, you won’t be able to maintain your OPT and F-1 status when you are in another status in the U.S. Speak with your immigration attorney and ISSS if you are changing your immigration status and have questions about maintaining your F-1 status.
+
+What is the Cap Gap Extension?
+Students who have a pending or approved cap-subject H-1B petition and requested a Change of Status to H-1B before their F-1 status ends are eligible for a Cap Gap extension to extend their F-1 status and, in some cases, work authorization before their H-1B goes into effect. Students who are eligible for this extension can request a Cap Gap I-20 via MyISSS (https://usfca.instructure.com/courses/1626497/pages/reporting-change-in-status-to-isss-while-on-opt?module_item_id=18493820#:~:text=I%2D20%20via-,MyISSS,Links%20to%20an%20external%20site.,-.%20For%20more) For more information about the Cap Gap extension, please visit the Cap Gap section of our OPT webpage (https://myusf.usfca.edu/isss/students/f-1/employment/optinfo#:~:text=periods%20of%20time-,Cap%20Gap%20Extension,-What%20is%20Cap)

@@ -1,0 +1,111 @@
+{
+  "categories": {
+    "general_opt": {
+      "title": "General OPT Information",
+      "questions": [
+        {
+          "question": "What is Optional Practical Training (OPT)?",
+          "answer": "Optional Practical Training (OPT) is designed for F-1 students to gain practical work experience in their major field of study for a total of up to 12 months, during their studies or immediately following their degree completion. Students are eligible for OPT once per each higher educational level.",
+          "additional_info": {
+            "types": [
+              "Pre-Completion OPT (before program end date)",
+              "Post-Completion OPT (after program end date)",
+              "STEM OPT Extension (additional 24 months for STEM degrees)"
+            ],
+            "eligibility_requirements": [
+              "Must have been enrolled full-time in F-1 student status for at least one academic year (two consecutive terms)",
+              "Must not have exceed 364 days of full-time CPT in current program",
+              "Do not need a job offer to apply"
+            ],
+            "resources": {
+              "webpage": "https://myusf.usfca.edu/isss/students/f-1/employment/optinfo",
+              "video": "https://usfca.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c4243f9f-5f77-4e97-bb59-b26f006cbc36&start=0.696347"
+            }
+          }
+        }
+      ]
+    },
+    "pre_completion_opt": {
+      "title": "Pre-Completion OPT",
+      "questions": [
+        {
+          "question": "What is Pre-Completion OPT?",
+          "answer": "Pre-Completion OPT is an off-campus work authorization that can only be used during your studies. You can apply as early as 90 days before you reach the one academic year requirement. It can be a great option for students who have found a job they want to work over summer vacation but are not eligible for CPT authorization.",
+          "additional_info": {
+            "work_hours": {
+              "during_semester": "Must work less than 20 hours per week (part-time)",
+              "during_breaks": "Can work more than 20 hours (full-time) during school breaks (Summer or Winter Intersession)"
+            },
+            "time_deduction": "Students who use part-time Pre-Completion OPT deduct days at half the rate. For example, if you work for 5 months on part-time Pre-Completion OPT, only 2.5 months are deducted from the total 12 months.",
+            "reapplication": "If you use part of your 12 month of OPT as Pre-Completion OPT, you will have to reapply and pay the filing fee again to use the remaining time for another period of Pre-Completion OPT or for Post-Completion OPT."
+          }
+        }
+      ]
+    },
+    "post_completion_opt": {
+      "title": "Post-Completion OPT",
+      "questions": [
+        {
+          "question": "What is Post-Completion OPT?",
+          "answer": "Post-Completion OPT is the off-campus work benefit that can only be used after your studies (once you have met the requirements for your degree).",
+          "additional_info": {
+            "timing": {
+              "earliest_start": "Can start work as early as the day after degree completion (assuming filed graduation application in a timely manner)",
+              "latest_start": "Can start work as late as 60 days after degree completion (latest OPT start day)"
+            },
+            "requirements": [
+              "Must have full-time employment (over 20 hours per week)",
+              "Students are expected to work during the OPT period",
+              "Must report employment on SEVP Portal",
+              "Limited to an aggregate maximum of 90 days of unemployment"
+            ],
+            "special_cases": "Students who have completed all credit and course requirements but only have a thesis, dissertation, or equivalent requirement to complete, are eligible to apply for Post-Completion OPT. This may largely apply to Doctorate level students."
+          }
+        }
+      ]
+    },
+    "stem_opt": {
+      "title": "STEM OPT Extension",
+      "questions": [
+        {
+          "question": "What is STEM OPT Extension?",
+          "answer": "STEM OPT is an additional 24 months of work authorization for students with a STEM qualifying degree. Only students who are on a period of approved Post-Completion OPT, with a STEM qualify degree, may apply for this extension.",
+          "additional_info": {
+            "requirements": [
+              "Employer must be enrolled in the E-Verify system",
+              "Position must be paid and full-time (over 20 hours per week)",
+              "All employment must be in your STEM major field of study"
+            ],
+            "resources": {
+              "e_verify": "https://www.e-verify.gov/about-e-verify/what-is-e-verify",
+              "stem_opt_page": "https://myusf.usfca.edu/ISSS/STEMOPT"
+            }
+          }
+        }
+      ]
+    },
+    "workshops_and_appointments": {
+      "title": "OPT Workshops and Advising Appointments",
+      "questions": [
+        {
+          "question": "Where can I get additional help with OPT questions?",
+          "answer": "Do you have more questions about the OPT application process, requested dates, and travel on OPT? Stop by our bi-weekly OPT drop-in advising hour to speak with an ISSS advisor.",
+          "additional_info": {
+            "format": {
+              "primary": "Most sessions will be held via zoom",
+              "special": "Three sessions will be hybrid"
+            },
+            "resources": {
+              "calendar": "https://calendar.google.com/calendar/embed?src=c_4f2f31366a7184e3dfb919e14bfa9f08f8d1e1fe60f1a22902068364789286ea%40group.calendar.google.com&ctz=America%2FLos_Angeles",
+              "appointment_scheduling": "https://usfca.instructure.com/courses/1626497/pages/next-steps-and-final-reminders?module_item_id=18493831"
+            },
+            "specific_questions": {
+              "recommendation": "If you have a specific question about your OPT eligibility or situation, please schedule an appointment with your ISSS advisor",
+              "scheduling_link": "Available through the appointment scheduling link"
+            }
+          }
+        }
+      ]
+    }
+  }
+} 

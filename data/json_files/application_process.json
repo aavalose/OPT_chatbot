@@ -1,0 +1,175 @@
+{
+  "categories": {
+    "application_process": {
+      "title": "OPT Application Process",
+      "questions": [
+        {
+          "question": "What is the OPT application process?",
+          "answer": "The process of applying for Optional Practical Training (OPT) employment authorization is very detailed. It is important to pay close attention to this course and follow the steps outlined accurately.",
+          "steps": [
+            "Complete the OPT course via Canvas within 1 year of when you will apply for OPT",
+            "Prepare your application materials in a digital format",
+            "Submit the OPT I-20 request through MyISSS",
+            "Retrieve your OPT I-20 Form, print, physically sign, and date it in black ink",
+            "Create a USCIS account and complete your OPT application (Form I-765) online",
+            "Pay the filing fee and submit your application to USCIS"
+          ],
+          "resources": {
+            "myisss": "https://usfca.instructure.com/courses/1626497/pages/overview?module_item_id=18493803",
+            "uscis_login": "https://myaccount.uscis.gov/sign-in",
+            "online_filing_guide": "https://myusf.usfca.edu/sites/default/files/users/sruszkowski/OPT_OnlineFiling.pdf",
+            "opt_faq": "https://myusf.usfca.edu/isss/students/f-1/employment/optfaq"
+          }
+        }
+      ]
+    },
+    "required_materials": {
+      "title": "Application Materials",
+      "questions": [
+        {
+          "question": "What Application Materials do you need to apply for OPT?",
+          "answer": "The application requires several documents for both the OPT I-20 Form request and the I-765 OPT application.",
+          "materials": {
+            "i20_request_documents": [
+              "Valid passport biographical page",
+              "Most recent I-94",
+              "Previous Employment Authorization Document (EAD) (if applicable)",
+              "Screenshot Proof of Completion of OPT Canvas Course"
+            ],
+            "i765_documents": [
+              {
+                "item": "Digital photo",
+                "specifications_url": "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/photos.html"
+              },
+              {
+                "item": "Filing Fee",
+                "details": "Estimated $470.00 USD for Online Filing",
+                "fee_schedule_url": "https://www.uscis.gov/g-1055"
+              },
+              {
+                "item": "Previous CPT and OPT I-20 Forms",
+                "details": "If applicable, scan copies of all pages with CPT and OPT authorization"
+              }
+            ],
+            "resources": {
+              "i94_url": "https://i94.cbp.dhs.gov/search/recent-search",
+              "missing_i20_template": "https://usfca.instructure.com/courses/1626497/pages/materials-to-prepare?module_item_id=18493802"
+            }
+          }
+        }
+      ]
+    },
+    "i20_request": {
+      "title": "Requesting OPT I-20",
+      "questions": [
+        {
+          "question": "How do you request your OPT I-20 Form via MyISSS?",
+          "answer": "The process involves submitting a request through MyISSS and getting approval from your academic advisor.",
+          "resources": {
+            "myisss_portal": "https://myisss.usfca.edu/",
+            "guide_video": "https://usfca.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bb53ef0f-8695-4725-a685-b2760184f5a5&start=0.168131"
+          },
+          "advisor_notes": {
+            "undergraduate_management": "List Benjamin Bottorff, Director of Academic Advising, as advisor",
+            "graduate_management": "List Tamara Rockett, Program Assistant for Graduate Student Affairs, as advisor"
+          },
+          "important_deadlines": "Submit I-765 OPT application to USCIS within 30 days of the I-20 issuance date"
+        }
+      ]
+    },
+    "i765_submission": {
+      "title": "Submitting Form I-765",
+      "questions": [
+        {
+          "question": "How do you submit your OPT application to USCIS?",
+          "answer": "The process involves creating a USCIS Online Account and submitting the I-765 application online.",
+          "resources": {
+            "account_creation_video": "https://www.youtube.com/watch?v=gqY6NmorTtU&t=2s",
+            "filing_guide": "https://myusf.usfca.edu/sites/default/files/users/sruszkowski/OPT_OnlineFiling.pdf"
+          },
+          "premium_processing": {
+            "description": "Service that expedites processing within 30 business days",
+            "requirements": [
+              "File Form I-907 with USCIS",
+              "Pay additional filing fee of $1,685.00 USD"
+            ],
+            "form_url": "https://www.uscis.gov/i-907",
+            "note": "Does NOT guarantee approval within 30 business days"
+          }
+        }
+      ]
+    },
+    "application_tracking": {
+      "title": "Tracking Application Status",
+      "questions": [
+        {
+          "question": "How can you track the status of your application?",
+          "answer": "USCIS Average Processing Time is 3-4 months from submitting Form I-765.",
+          "tracking_methods": [
+            "Check case status and case history tabs in USCIS online account",
+            "View electronic copies of notices in Documents tab"
+          ],
+          "expected_documents": {
+            "receipt_notice": {
+              "type": "I-797 Receipt Notice",
+              "timeline": "4-6 weeks from submission",
+              "format": ["Electronic", "Physical mail"]
+            },
+            "approval_notice": {
+              "type": "I-797 Approval or Denial Notice",
+              "timeline": "4-6 weeks from date of action",
+              "format": ["Electronic", "Physical mail"]
+            },
+            "rfe_notice": {
+              "type": "I-797 Request for Further Evidence",
+              "action": "Contact ISSS immediately at isss@usfca.edu"
+            }
+          }
+        }
+      ]
+    },
+    "ead_card": {
+      "title": "EAD Card Information",
+      "questions": [
+        {
+          "question": "What is an Employment Authorization Document (EAD) card?",
+          "answer": "The EAD card is your proof of work authorization in the United States and is issued after OPT application approval by USCIS.",
+          "delivery_info": {
+            "method": "Mailed to physical address on I-765 application",
+            "tracking": "USPS tracking number available in case status tab",
+            "timeline": "Typically delivered within a week of mailing"
+          },
+          "ssn_info": {
+            "new_applicants": "Will receive SSN card separately, typically 7 business days after EAD card",
+            "existing_ssn": "Do not need to apply again with I-765 OPT application",
+            "purpose": "Required by employer for wage and tax purposes"
+          },
+          "sample_image": "images/EAD_card.png"
+        }
+      ]
+    },
+    "visa_renewal": {
+      "title": "F-1 Visa Renewal During OPT",
+      "questions": [
+        {
+          "question": "How do you renew your F-1 student visa during OPT?",
+          "answer": "Even during OPT or STEM OPT, your immigration status in the U.S. is still F-1 Student. If your F-1 student visa stamp will expire before you plan to return to the U.S., you need to renew it.",
+          "renewal_process": {
+            "description": "The visa renewal application is much like the initial visa application and in almost all cases will require you to apply in person and sit for an interview.",
+            "additional_documents": [
+              "OPT I-20 with valid travel signature endorsement signed in the past six months as found on the second page",
+              "Current and valid EAD card",
+              "Proof of Employment or search of employment (Letter from employer)"
+            ],
+            "interview_tips": "You can expect the visa interview to be similar to past interviews, where the officer will want to know about your goals in the U.S. and your intent to return home after completing those goals. Speaking on how your Optional Practical Training (OPT) will allow you to achieve these goals has led many students to successful visa renewals."
+          },
+          "resources": {
+            "employer_letter_info": "https://myusf.usfca.edu/isss/students/f-1/employment/optinfo#:~:text=Letter%20From%20an%20Employer",
+            "visa_processing_times": "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/wait-times.html",
+            "visa_info": "https://myusf.usfca.edu/isss/new-students/visainfo"
+          }
+        }
+      ]
+    }
+  }
+} 

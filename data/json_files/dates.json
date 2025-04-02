@@ -1,0 +1,133 @@
+{
+  "categories": {
+    "program_dates": {
+      "title": "Program End Date Information",
+      "questions": [
+        {
+          "question": "What is your Program End Date and where can you find it?",
+          "answer": "Your Program End is the date when you complete your program requirements (usually the date of your last class or completion of your last assignment or exam).",
+          "additional_info": {
+            "location": "Typically reflected on the first page of your I-20 Form",
+            "exceptions": [
+              "Some students may complete their program earlier",
+              "Some students may require a program extension to complete their program later than the date listed"
+            ]
+          }
+        }
+      ]
+    },
+    "grace_period": {
+      "title": "Grace Period Information",
+      "questions": [
+        {
+          "question": "What is a Grace Period and why is it important?",
+          "answer": "After you complete your program, you have 60 days to consider your options for staying in the U.S. also known as your 60 Day Grace Period.",
+          "restrictions": {
+            "travel": {
+              "domestic": "Can travel within the U.S.",
+              "international": "Cannot re-enter in F-1 status if you leave the U.S."
+            }
+          }
+        }
+      ]
+    },
+    "application_timeline": {
+      "title": "OPT Application Timeline",
+      "questions": [
+        {
+          "question": "When is the OPT application window?",
+          "answer": "A student's 5-month application period starts from 90 days before their program completion and ends 60 days after their program completion date in which USCIS must receive your OPT application.",
+          "processing_time": "Typically takes 3-4 months for USCIS to process an OPT application",
+          "recommendation": "Apply early due to processing time"
+        },
+        {
+          "question": "When should you submit your OPT application after receiving your OPT I-20 Form?",
+          "answer": "Your OPT I-20 Form is valid for 30 days from the date the ISSS office recommended you for OPT.",
+          "important_notes": {
+            "deadline": "The OPT application must be submitted to USCIS within 30 days of this date",
+            "consequences": "Applications submitted with an OPT I-20 Form 30 days after initial issuance will result in an application denial",
+            "solution": "If exceeding 30 days, submit another OPT request via MyISSS portal to receive a new OPT I-20 Form"
+          }
+        }
+      ]
+    },
+    "work_authorization_dates": {
+      "title": "Work Authorization Timeline",
+      "questions": [
+        {
+          "question": "When can you start working on OPT?",
+          "answer": "A student who finishes all program requirements can choose an OPT start date from one day after their program completion to 60 days after that date.",
+          "important_requirements": [
+            "Cannot start working before the OPT start date listed on the EAD card",
+            "Must physically have possession of your EAD card to start working"
+          ],
+          "considerations": [
+            "USCIS processing times",
+            "Expected employment start date",
+            "Travel plans"
+          ],
+          "processing_recommendation": "Please try to give USCIS 90 days of processing before your requested OPT start date"
+        },
+        {
+          "question": "When does your work authorization end on OPT?",
+          "answer": "The OPT end date will be 12 months after the student's chosen OPT start date.",
+          "limitations": {
+            "post_completion": "The latest end date for Post-Completion OPT will never be beyond 14-months after program completion",
+            "pre_completion_impact": {
+              "part_time": "Students who use part-time Pre-Completion OPT deduct from Post-Completion OPT days at half the rate",
+              "full_time": "Students who use full-time Pre-Completion OPT deduct at the full rate",
+              "example": {
+                "part_time": "5 months part-time = 2.5 months deducted",
+                "full_time": "5 months full-time = 5 months deducted"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "post_opt_period": {
+      "title": "Post-OPT Period",
+      "questions": [
+        {
+          "question": "Can students remain in the U.S. after finishing their period of OPT?",
+          "answer": "Students who complete their OPT period have a 60 Day Grace Period after their OPT has ended.",
+          "grace_period_details": {
+            "allowed_activities": [
+              "Prepare for departure",
+              "Transfer to a new school",
+              "Change visa status"
+            ],
+            "restrictions": "Cannot work during this grace period",
+            "early_termination": "If OPT ends early, no 60 Day Grace Period is afforded and should depart the U.S. soon after"
+          }
+        }
+      ]
+    },
+    "stem_extension": {
+      "title": "STEM OPT Extension",
+      "questions": [
+        {
+          "question": "Do you qualify for the 2-year STEM OPT Extension?",
+          "answer": "Students who are on a period of approved Post-Completion OPT and have a STEM-qualifying degree can apply for the 24-month STEM OPT extension.",
+          "resources": {
+            "qualifying_degrees": "https://myusf.usfca.edu/ISSS/STEMOPT"
+          }
+        },
+        {
+          "question": "When should students apply for the STEM OPT Extension?",
+          "answer": "Students should apply 90 days before their Post-Completion OPT expires.",
+          "important_notes": {
+            "deadline": "Once the Post-Completion OPT expires, students are no longer eligible to apply",
+            "requirements": [
+              "Submit I-765 application",
+              "Pay another application fee"
+            ],
+            "resources": {
+              "more_info": "https://myusf.usfca.edu/ISSS/STEMOPT"
+            }
+          }
+        }
+      ]
+    }
+  }
+} 
