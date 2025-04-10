@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 from typing import Dict, List
 import chromadb
-from chromadb.utils.embedding_functions import DefaultEmbeddingFunction
+from chromadb.utils import embedding_functions
 
 
 class EmbeddingsManager:
@@ -21,9 +21,12 @@ class EmbeddingsManager:
 
         # Initialize ChromaDB client with default embedding function
         self.chroma_client = chromadb.PersistentClient(path=str(self.vector_dir / "chromadb"))
+        self.embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
+            model_name="all-MiniLM-L6-v2"
+        )
         self.collection = self.chroma_client.get_or_create_collection(
             name="questions",
-            embedding_function=DefaultEmbeddingFunction()
+            embedding_function=self.embedding_function
         )
 
     def process_json_files(self):
@@ -143,7 +146,7 @@ class EmbeddingsManager:
             # Create a new collection
             self.collection = self.chroma_client.create_collection(
                 name="questions",
-                embedding_function=DefaultEmbeddingFunction()
+                embedding_function=self.embedding_function
             )
             print("Created new empty collection")
             
