@@ -6,6 +6,7 @@ import os
 from typing import Dict, List
 import chromadb
 from chromadb.utils import embedding_functions
+import streamlit as st
 
 
 class EmbeddingsManager:
@@ -16,31 +17,31 @@ class EmbeddingsManager:
         # Initialize paths
         self.data_dir = Path(__file__).parent.parent / 'data'
         self.json_dir = self.data_dir / 'json_files'
-        self.vector_dir = self.data_dir / 'vector_store'
-        self.vector_dir.mkdir(exist_ok=True)
 
-        # Initialize ChromaDB client with default embedding function
-        self.chroma_client = chromadb.PersistentClient(path=str(self.vector_dir / "chromadb"))
-        self.embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
+        # Use Streamlit's cache to initialize ChromaDB only once per session
+        self.collection = self.initialize_collection()
+
+    @st.cache_resource
+    def initialize_collection():
+        """Initialize ChromaDB collection with caching"""
+        # Use in-memory client instead of persistent
+        chroma_client = chromadb.Client()
+        embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
             model_name="all-MiniLM-L6-v2"
         )
-        self.collection = self.chroma_client.get_or_create_collection(
+        collection = chroma_client.create_collection(
             name="questions",
-            embedding_function=self.embedding_function
+            embedding_function=embedding_function
         )
-
-    def process_json_files(self):
-        """Process all JSON files and create embeddings"""
-        kb_path = self.data_dir / 'knowledge_base.json'
+        
+        # Load and process knowledge base
+        kb_path = Path(__file__).parent.parent / 'data' / 'knowledge_base.json'
         if kb_path.exists():
             try:
                 with open(kb_path, 'r') as f:
                     data = json.load(f)
                 
                 questions = data.get('questions', [])
-                
-                # Reset the vector store using existing method
-                self.reset_vector_store()
                 
                 # Process questions in batches
                 batch_size = 32
@@ -66,30 +67,27 @@ class EmbeddingsManager:
                         
                         docs.append(augmented_question)
                         metadatas.append({
-                            'original_question': question ,
+                            'original_question': question,
                             'answer': answer,
                             'category': category,
                             'metadata': json.dumps(metadata),
-                            
                         })
                         ids.append(f"q_{idx}")
-                        
+                    
                     # Add batch to ChromaDB collection
-                    self.collection.add(
+                    collection.add(
                         documents=docs,
                         metadatas=metadatas,
                         ids=ids
                     )
-                    
+                
                 print(f"Processed knowledge base with {len(questions)} questions")
                 
             except Exception as e:
                 print(f"Error processing knowledge base: {str(e)}")
                 raise e
-        else:
-            print(f"Warning: knowledge_base.json not found at {kb_path}")
         
-        print(f"Created vector store with {self.collection.count()} questions")
+        return collection
 
     def search_similar_questions(self, query: str, k: int = 1, print_results: bool = False) -> List[Dict]:
         """
@@ -140,14 +138,11 @@ class EmbeddingsManager:
         """Reset the vector store by deleting and recreating the collection"""
         try:
             # Delete the existing collection
-            self.chroma_client.delete_collection(name="questions")
+            self.collection.delete()
             print("Deleted existing collection")
             
             # Create a new collection
-            self.collection = self.chroma_client.create_collection(
-                name="questions",
-                embedding_function=self.embedding_function
-            )
+            self.collection = self.initialize_collection()
             print("Created new empty collection")
             
             return True
