@@ -3,5 +3,4 @@ google-generativeai
 python-dotenv
 pathlib>=1.0.1
 chromadb==0.3.21
-sqlite3
 
