@@ -5,13 +5,29 @@ import json
 from pathlib import Path
 from typing import List, Tuple, Dict
 from .embeddings_manager import *
+import streamlit as st
 
-# Load environment variables first
-load_dotenv()
-print(f"API Key loaded: {os.getenv('GEMINI_API_KEY') is not None}")  # Debug line
+# Try to get API key from different sources
+def get_api_key():
+    # First try Streamlit secrets (for cloud deployment)
+    try:
+        return st.secrets["GEMINI_API_KEY"]
+    except:
+        # If not in Streamlit Cloud, try local .env file
+        load_dotenv()
+        api_key = os.getenv('GEMINI_API_KEY')
+        if api_key:
+            return api_key
+        else:
+            raise ValueError("GEMINI_API_KEY not found in environment variables or Streamlit secrets")
 
 # Configure the Gemini API with your key
-genai.configure(api_key=os.getenv('GEMINI_API_KEY'))
+try:
+    api_key = get_api_key()
+    genai.configure(api_key=api_key)
+    print("API Key loaded successfully")
+except Exception as e:
+    print(f"Error loading API key: {str(e)}")
 
 def preprocess_query(query: str) -> Tuple[List[str], List[Dict]]:
     """
