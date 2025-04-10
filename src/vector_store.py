@@ -1,4 +1,4 @@
-from sentence_transformers import SentenceTransformer
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import json
@@ -8,8 +8,11 @@ import streamlit as st
 
 def initialize_vector_store():
     """Initialize the vector store components in session state"""
-    if 'model' not in st.session_state:
-        st.session_state.model = SentenceTransformer('all-MiniLM-L6-v2')
+    if 'vectorizer' not in st.session_state:
+        st.session_state.vectorizer = TfidfVectorizer(
+            ngram_range=(1, 2),
+            stop_words='english'
+        )
     
     if 'questions' not in st.session_state:
         kb_path = Path(__file__).parent.parent / 'data' / 'knowledge_base.json'
@@ -20,29 +23,26 @@ def initialize_vector_store():
         else:
             st.session_state.questions = []
     
-    if 'embeddings' not in st.session_state:
-        if st.session_state.questions:
-            texts = [q['question'] for q in st.session_state.questions]
-            st.session_state.embeddings = st.session_state.model.encode(texts)
-        else:
-            st.session_state.embeddings = None
+    if 'embeddings' not in st.session_state and st.session_state.questions:
+        texts = [q['question'] for q in st.session_state.questions]
+        st.session_state.embeddings = st.session_state.vectorizer.fit_transform(texts)
 
 def search_similar_questions(query: str, k: int = 1) -> List[Dict]:
-    """Search for similar questions using the vector store"""
+    """Search for similar questions using TF-IDF and cosine similarity"""
     # Ensure vector store is initialized
     initialize_vector_store()
     
-    if not st.session_state.questions or st.session_state.embeddings is None:
+    if not st.session_state.questions:
         return []
     
     # Normalize query
     normalized_query = query.lower().replace("opt", "optional practical training (opt)")
     
     # Get query embedding
-    query_embedding = st.session_state.model.encode([normalized_query])
+    query_vector = st.session_state.vectorizer.transform([normalized_query])
     
     # Calculate similarities
-    similarities = cosine_similarity(query_embedding, st.session_state.embeddings)[0]
+    similarities = cosine_similarity(query_vector, st.session_state.embeddings)[0]
     
     # Get top k indices
     top_k_indices = np.argsort(similarities)[-k:][::-1]

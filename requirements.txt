@@ -4,5 +4,4 @@ python-dotenv
 pathlib>=1.0.1
 scikit-learn
 numpy
-sentence-transformers
 
