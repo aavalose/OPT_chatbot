@@ -4,7 +4,7 @@ import os
 import json
 from pathlib import Path
 from typing import List, Tuple, Dict
-from .vector_store import VectorStore, search_similar_questions
+from .vector_store import search_similar_questions
 import streamlit as st
 
 # Try to get API key from different sources
