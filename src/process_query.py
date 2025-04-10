@@ -4,7 +4,7 @@ import os
 import json
 from pathlib import Path
 from typing import List, Tuple, Dict
-from .vector_store import VectorStore
+from .vector_store import VectorStore, search_similar_questions
 import streamlit as st
 
 # Try to get API key from different sources
@@ -171,14 +171,13 @@ def generate_response(query: str, primary_document: str, secondary_documents: Li
     """
     Enhanced response generation using similar questions
     """
-    vector_store = VectorStore()
     model = None
     response = None
     try:
         # Load document contents
         primary_content = load_json_content(primary_document) if primary_document else {}
         secondary_contents = [load_json_content(doc) for doc in secondary_documents]
-        similar_questions = vector_store.search_similar_questions(query, k=number_of_similar_questions)
+        similar_questions = search_similar_questions(query, k=number_of_similar_questions)
         
         similar_contexts = "\n".join([
             f"Similar Question: {q['question']}\nAnswer: {q['answer']}\nMetadata: {q['metadata']}"

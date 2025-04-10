@@ -6,59 +6,52 @@ from pathlib import Path
 from typing import List, Dict
 import streamlit as st
 
-class VectorStore:
-    # Static cache for the model
-    _model = None
-    _questions = None
-    _embeddings = None
+def initialize_vector_store():
+    """Initialize the vector store components in session state"""
+    if 'model' not in st.session_state:
+        st.session_state.model = SentenceTransformer('all-MiniLM-L6-v2')
     
-    def __init__(self):
-        if VectorStore._model is None:
-            VectorStore._model = SentenceTransformer('all-MiniLM-L6-v2')
-        if VectorStore._questions is None:
-            VectorStore._questions = self._load_knowledge_base()
-        if VectorStore._embeddings is None:
-            VectorStore._embeddings = self._create_embeddings()
-        
-        self.model = VectorStore._model
-        self.questions = VectorStore._questions
-        self.embeddings = VectorStore._embeddings
-    
-    def _load_knowledge_base(self):
+    if 'questions' not in st.session_state:
         kb_path = Path(__file__).parent.parent / 'data' / 'knowledge_base.json'
         if kb_path.exists():
             with open(kb_path, 'r') as f:
                 data = json.load(f)
-                return data.get('questions', [])
+                st.session_state.questions = data.get('questions', [])
+        else:
+            st.session_state.questions = []
+    
+    if 'embeddings' not in st.session_state:
+        if st.session_state.questions:
+            texts = [q['question'] for q in st.session_state.questions]
+            st.session_state.embeddings = st.session_state.model.encode(texts)
+        else:
+            st.session_state.embeddings = None
+
+def search_similar_questions(query: str, k: int = 1) -> List[Dict]:
+    """Search for similar questions using the vector store"""
+    # Ensure vector store is initialized
+    initialize_vector_store()
+    
+    if not st.session_state.questions or st.session_state.embeddings is None:
         return []
     
-    def _create_embeddings(self):
-        if not self.questions:
-            return None
-        texts = [q['question'] for q in self.questions]
-        return self.model.encode(texts)
+    # Normalize query
+    normalized_query = query.lower().replace("opt", "optional practical training (opt)")
     
-    def search_similar_questions(self, query: str, k: int = 1) -> List[Dict]:
-        if not self.questions or self.embeddings is None:
-            return []
+    # Get query embedding
+    query_embedding = st.session_state.model.encode([normalized_query])
+    
+    # Calculate similarities
+    similarities = cosine_similarity(query_embedding, st.session_state.embeddings)[0]
+    
+    # Get top k indices
+    top_k_indices = np.argsort(similarities)[-k:][::-1]
+    
+    # Format results
+    results = []
+    for idx in top_k_indices:
+        question_data = st.session_state.questions[idx].copy()
+        question_data['similarity_score'] = float(similarities[idx])
+        results.append(question_data)
         
-        # Normalize query
-        normalized_query = query.lower().replace("opt", "optional practical training (opt)")
-        
-        # Get query embedding
-        query_embedding = self.model.encode([normalized_query])
-        
-        # Calculate similarities
-        similarities = cosine_similarity(query_embedding, self.embeddings)[0]
-        
-        # Get top k indices
-        top_k_indices = np.argsort(similarities)[-k:][::-1]
-        
-        # Format results
-        results = []
-        for idx in top_k_indices:
-            question_data = self.questions[idx].copy()
-            question_data['similarity_score'] = float(similarities[idx])
-            results.append(question_data)
-            
-        return results 
+    return results 
