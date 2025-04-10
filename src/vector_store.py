@@ -7,12 +7,24 @@ from typing import List, Dict
 import streamlit as st
 
 class VectorStore:
-    @st.cache_resource
-    def _initialize_model():
-        return SentenceTransformer('all-MiniLM-L6-v2')
+    # Static cache for the model
+    _model = None
+    _questions = None
+    _embeddings = None
     
-    @st.cache_data
-    def _load_knowledge_base():
+    def __init__(self):
+        if VectorStore._model is None:
+            VectorStore._model = SentenceTransformer('all-MiniLM-L6-v2')
+        if VectorStore._questions is None:
+            VectorStore._questions = self._load_knowledge_base()
+        if VectorStore._embeddings is None:
+            VectorStore._embeddings = self._create_embeddings()
+        
+        self.model = VectorStore._model
+        self.questions = VectorStore._questions
+        self.embeddings = VectorStore._embeddings
+    
+    def _load_knowledge_base(self):
         kb_path = Path(__file__).parent.parent / 'data' / 'knowledge_base.json'
         if kb_path.exists():
             with open(kb_path, 'r') as f:
@@ -20,12 +32,6 @@ class VectorStore:
                 return data.get('questions', [])
         return []
     
-    def __init__(self):
-        self.model = self._initialize_model()
-        self.questions = self._load_knowledge_base()
-        self.embeddings = self._create_embeddings()
-    
-    @st.cache_data
     def _create_embeddings(self):
         if not self.questions:
             return None
